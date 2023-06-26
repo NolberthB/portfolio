@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
+//new configuration for alias
 import { fileURLToPath, URL } from 'node:url'
 
 
@@ -8,6 +9,7 @@ import { fileURLToPath, URL } from 'node:url'
 export default defineConfig({
   resolve: {
     alias:{
+      //new configuration for alias
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
