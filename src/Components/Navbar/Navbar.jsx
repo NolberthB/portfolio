@@ -1,24 +1,28 @@
-import { useState } from 'react'
+import { Link } from 'react-router-dom'
+
+import './main.css'
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false)
-
-  const toggleNav = () => {
-    setIsOpen(!isOpen)
-  }
 
   return (
-    <div className={`nav-list ${isOpen ? 'open' : ''}`}>
-      <button className="toggle-button" onClick={toggleNav}>
-        Toggle Nav
-      </button>
-      <ul className="list-items">
-        <li>Home</li>
-        <li>CV</li>
-        <li>Portfolio</li>
+    <nav>
+      <ul>
+
+        <li> 
+          <Link to="/"> HOME </Link>  
+        </li>
+        
+        <li> 
+          <Link to="/cv"> CV </Link>  
+        </li>
+        
+        <li> 
+          <Link to="/portfolio"> PORTFOLIO </Link>  
+        </li>
+      
       </ul>
-    </div>
-  );
-};
+    </nav>
+  )
+}
 
 export { Navbar }
