@@ -3,7 +3,13 @@ import './main.css'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <section>
+      <div className='container'>
+
+          <div className='modal'>MODAL PERRON</div>
+
+      </div>
+    </section>
   )
 }
 
